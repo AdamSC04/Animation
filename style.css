@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;  
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+}
+
+.topbar {
+    animation-name: top;
+    position: relative;
+    animation-duration: 3s;
+    background-image: linear-gradient(blueviolet, blue);
+    width: 100vw;
+    text-decoration: line-through;
+    grid-row: 1/4;
+}
+
+.underline {
+    opacity: 0;
+    animation-name: under;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    width: 100vw;
+    height: 7px;
+    background-color: black;
+}
+
+@keyframes top {
+    0% {
+        width: 0vw;
+    }
+    100% {
+        width: 100vw;
+    }
+}
+@keyframes under {
+    0% {
+        width: 0vw;
+        opacity: 100%;
+    }
+    100% {
+        width: 100vw;
+        opacity: 100%;
+    }
+}

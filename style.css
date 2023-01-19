@@ -16,7 +16,7 @@
     animation-name: top;
     position: relative;
     animation-duration: 3s;
-    background-image: linear-gradient(blueviolet, blue);
+    background-image: linear-gradient(blueviolet, rgb(121, 121, 211));
     width: 100vw;
     text-decoration: line-through;
     grid-row: 1/4;
@@ -46,7 +46,8 @@
     opacity: 0;
     height: 15vh;
     width: 20vw;
-    background-image: linear-gradient(blueviolet, white);
+    border-radius: 5px;
+    background-color: rgb(121, 121, 211);
     margin: 5px;
     animation-name: boxes;
     animation-fill-mode: forwards;

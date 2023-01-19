@@ -36,7 +36,23 @@
 
 .main {
     grid-row: 5/20;
+    width: 100vw;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box1 {
+    opacity: 0;
+    height: 15vh;
+    width: 20vw;
+    background-color: blueviolet;
+    margin: 5px;
+    animation-name: boxes;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-duration: 3s;
+    animation-delay: 6s;
 }
 
 @keyframes top {
@@ -54,6 +70,16 @@
     }
     100% {
         width: 100vw;
+        opacity: 100%;
+    }
+}
+@keyframes boxes {
+    0% {
+        width: 0vw;
+        opacity: 100%;
+    }
+    100% {
+        width: 20vw;
         opacity: 100%;
     }
 }

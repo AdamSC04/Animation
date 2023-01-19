@@ -46,13 +46,25 @@
     opacity: 0;
     height: 15vh;
     width: 20vw;
-    background-color: blueviolet;
+    background-image: linear-gradient(blueviolet, white);
     margin: 5px;
     animation-name: boxes;
     animation-fill-mode: forwards;
     position: relative;
     animation-duration: 3s;
     animation-delay: 6s;
+    display: flex;
+    align-items: center;
+}
+
+.lorem {
+    margin: 5px;
+    animation-name: text;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-duration: 3s;
+    animation-delay: 9s;
+    opacity: 0;
 }
 
 @keyframes top {
@@ -80,6 +92,14 @@
     }
     100% {
         width: 20vw;
+        opacity: 100%;
+    }
+}
+@keyframes text {
+    0% {
+        opacity: 0;
+    }
+    100% {
         opacity: 100%;
     }
 }
